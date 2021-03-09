@@ -16,10 +16,6 @@ let todosPokemons = []
 */
 
 
-app.listen(85, () => {
-    console.log("Server is running")
-})
-
 /** 
 app.get('/pokemons', (req, res) => {
     const {nome} =  req.query
@@ -28,7 +24,12 @@ app.get('/pokemons', (req, res) => {
 })
 */
 
+app.use(express.static(__dirname + './src/public/img'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'))
+    res.sendFile(path.join(__dirname, 'src/views/index.html'))
+})
+
+app.listen(80, () => {
+    console.log("Server is running")
 })
