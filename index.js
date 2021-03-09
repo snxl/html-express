@@ -24,7 +24,7 @@ app.get('/pokemons', (req, res) => {
 })
 */
 
-app.use(express.static(__dirname + './src/public/img'));
+app.use(express.static(path.join(__dirname, './src/public')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/views/index.html'))
