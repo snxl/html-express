@@ -4,49 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Pokeapi</h1>
+        <h1 class="titulo">Pokeapi</h1>
         <div>
             <img 
                 src="https://avatars.githubusercontent.com/u/62858129?s=400&u=7f273408e6f44f5a283a2c3282e1c81cc79c1631&v=4"" 
                 alt="foto"
-                width="300px"
-                height="300px"
             />
             <span>Foto</span>
         </div>
     </header>
     <main>
-        <div>
+        <div id="pesquisa">
             <input type="text" placeholder="Pesquise seu pokemon aqui!!" style="width: 600px">
         </div>
-        <ul type="none">
-            <li>
-                <div>
+        <div class="lista">
+                <div class="pokemon">
                     <strong>Pokemon 1</strong>
                     <img 
                         src="../img/Pineco.png" 
                         alt="foto pineco"
                     />
                 </div>
-            </li>
-            <li>
-                <div>
+                <div class="pokemon">
                     <strong>Pokemon 2</strong>
                     <img 
                         src="../img/pikachu.jpg" 
                         alt="foto pikachu">
                 </div>
-            </li>
-            <li>
-                <div>
-                    <strong>Pokemon 3</strong>
-                </div>
-            </li>
-        </ul>
+        </div>
     </main>
     <footer>
         <span>DESENVOLVIDO POR NICOLAS SOARES GOMES</span>
